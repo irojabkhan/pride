@@ -1,0 +1,614 @@
+
+body {
+	font-family: 'Dosis', sans-serif;
+	font-size: 18px;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	font-size: 60px;
+	margin-top: 0;
+	font-weight: 800;
+}
+
+h2 {
+	font-size: 45px;
+	margin: 0;
+	font-weight: 700;
+}
+
+h3 {
+	margin: 0;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.header {
+	min-height: 100vh;
+}
+
+.header, 
+.about, 
+.service, 
+.portfolio, 
+.testimonial, 
+.contact {
+	height: auto;
+	/*min-height: 100vh;*/
+	position: relative;
+	color: #535A3B;
+	padding: 7% 3%;
+}
+
+.container {
+	max-width: 1000px;
+	width: auto;
+}
+
+/*.vertical_center {
+	position: absolute;
+	top: 50%;
+	left: 39px;
+	transform: translateY(-50%);
+}*/
+
+.title {
+    margin-bottom: 50px;
+    border-left: 5px solid #535A3B;
+    padding-left: 15px;
+}
+
+.title h3 {
+	font-weight: 400;
+}
+
+/*************************************************************
+ Main Wrapper Style
+ *************************************************************/
+
+.main_wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+}
+
+/*************************************************************
+ Menu Bar Style
+ *************************************************************/
+
+.menu_bar {
+	width: 20%;
+	height: 100vh;
+	background: #535A3B;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+
+.menu_bar ul {
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	list-style: none;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+
+.menu_bar ul li {
+	border-bottom: 1px dashed #EFF7D3;
+	text-align: left;
+}
+
+.menu_bar ul li:last-child {
+	border-bottom: 0;
+}
+
+.menu_bar ul li a {
+	font-size: 25px;
+	padding: 15px 10px;
+	display: block;
+	text-decoration: none;
+	color: #EFF7D3;
+}
+
+.menu_bar ul li a:hover {
+	color: #CEDCC3;
+}
+
+.menu_bar ul li a.active {
+	color: #333;
+	-webkit-transition: 500ms;
+	transition: 500ms;
+}
+
+/*************************************************************
+ Wrapper Style
+ *************************************************************/
+
+.wrapper {
+	width: 80%;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+/*************************************************************
+ Header Style Area
+ *************************************************************/
+
+.header {
+	background: url(../img/header-bg.jpg) no-repeat top right fixed;
+	background-size: cover;
+}
+
+.header_content {
+	margin-top: 15%;
+	color: #535A3B;
+}
+
+/*************************************************************
+ About Style Area
+ *************************************************************/
+
+.about {
+ 	background: #;
+ }
+
+.about .content h3 {
+	margin-bottom: 25px;
+	margin-top: -8px;
+}
+
+/*************************************************************
+ Service Style Area
+ *************************************************************/
+
+.service {
+ 	background: #CEDCC3;
+ }
+
+.service .service_single i {
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	font-size: 70px;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.service .service_single h3 {
+	margin-bottom: 15px;
+}
+
+/*************************************************************
+ Portfolio Style Area
+ *************************************************************/
+
+.portfolio .portfolio_content ul {
+ 	/*display: flex;
+	flex-wrap: no-wrap;*/
+	font-size: 0;
+ }
+
+.portfolio .portfolio_content ul li {
+ 	position: relative;
+ 	width: 25%;
+ 	display: inline-block;
+ }
+
+.portfolio .portfolio_content ul li:after {
+ 	content: "";
+ 	height: 100%;
+ 	width: 100%;
+ 	background: #000;
+ 	position: absolute;
+ 	left: 0;
+ 	top: 0;
+	display: block;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	-webkit-transition: 500ms;
+	transition: 500ms;
+ }
+
+.portfolio .portfolio_content ul li:hover:after {
+ 	content: "";
+ 	height: 100%;
+ 	width: 100%;
+ 	background: #000;
+ 	left: 0;
+ 	top: 0;
+	display: block;
+	opacity: .7;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+ }
+
+.portfolio .portfolio_content ul li .portfolio_popup {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	z-index: 100;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+.portfolio .portfolio_content ul li:hover .portfolio_popup {
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.portfolio .portfolio_content ul li .portfolio_popup a {
+	
+}
+
+.portfolio .portfolio_content ul li .portfolio_popup a i.fa {
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	font-size: 50px;
+	color: #EFF7D3;
+}
+
+.portfolio .portfolio_content ul li img {
+	width: 100%;
+}
+
+/*************************************************************
+ Portfolio PopUp Style Area
+ *************************************************************/
+
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+	top: 0;
+	bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+	padding: 0;
+}
+
+/* 
+for zoom animation 
+uncomment this part if you haven't added this code anywhere else
+*/
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: all 0.3s ease-out; 
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+/*************************************************************
+ Testimonial Style Area
+ *************************************************************/
+
+.testimonial {
+	background: url(../img/testimonial-bg.jpg) no-repeat right;
+}
+
+.owl_carousel {
+	max-width: 1000px;
+	overflow: hidden;
+}
+
+.testimonial .review-main {
+	position: relative;
+	min-height: 200px;
+}
+
+.testimonial .review-main .review-con {
+	padding-left: 230px;
+}
+
+.testimonial .item img {
+	height: 200px;
+	width: 200px;
+	position: absolute;
+}
+
+/*************************************************************
+ Contact Style Area
+ *************************************************************/
+
+.contact .address ul li {
+	margin-bottom: 20px;
+	position: relative;
+	padding-left: 70px;
+ }
+
+.contact .address ul li i.fa {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 50px;
+	line-height: 50px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+}
+
+.contact .contact_form .half {
+	width: 49%;
+	display: inline-block;
+}
+
+.contact .contact_form .half.first {
+	margin-right: 9px;
+}
+
+.contact .contact_form .form-control {
+	border-radius: 0;
+	border: 0;
+	color: #535A3B;
+	border-left: 1px solid #535A3B;
+	box-shadow: none;
+	outline: 0;
+}
+
+.form-control::-webkit-input-placeholder {
+   color: #535A3B;
+}
+
+.form-control:-moz-placeholder { /* Firefox 18- */
+   color: #535A3B;  
+}
+
+.form-control::-moz-placeholder {  /* Firefox 19+ */
+   color: #535A3B;  
+}
+
+.form-control:-ms-input-placeholder {  
+   color: #535A3B;  
+}
+
+.contact .contact_form .btn-default {
+	border: 0;
+	border-radius: 0;
+	background: #535A3B;
+	color: #fff;
+	outline: 0;
+}
+
+/*************************************************************
+ Footer Style Area
+ *************************************************************/
+
+ .footer {
+ 	background: #A7B99E;
+ 	padding: 2%;
+	color: #535A3B;
+ }
+
+.footer p {
+	margin-bottom: 0;
+}
+
+.footer p a {
+	color: #535A3B;
+	text-decoration: underline;
+}
+
+.footer .social-icon ul {
+	text-align: right;
+	
+}
+
+.footer .social-icon ul li {
+	padding: 0 5px;
+	display: inline;
+}
+
+.footer .social-icon ul li a i.fa {
+	font-size: 18px;
+	text-align: center;
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	color: #535A3B;
+}
+
+
+/*************************************************************
+ Responsive Style Area (max-width: 991px)
+ *************************************************************/
+
+@media (max-width: 991px) {
+
+	.mobile-inner-header,
+	.mobile-inner-nav {
+		z-index: 9999;
+	}
+
+	.header {
+		min-height: auto;
+	}
+
+	.header_content {
+		margin: 15% 0;
+	}
+
+	.menu_bar {
+		display: none;
+		visibility: hidden;
+	}
+
+	.wrapper {
+		width: 100%;
+	}
+
+	.about img {
+		margin-bottom: 30px;
+		max-width: 350px;
+	}
+
+	.service_single {
+		margin-bottom: 50px;
+	}
+
+	.service_single.last_child {
+		margin-bottom: 0;
+	}
+
+	.portfolio .portfolio_content ul li {
+	 	width: 33%;
+	 }
+
+	.contact .contact_form .form-control {
+		border: 1px solid;
+	}
+}
+
+/*************************************************************
+ Responsive Style Area (max-width: 767px)
+ *************************************************************/
+
+@media (max-width: 767px) {
+
+	.portfolio .portfolio_content ul li {
+	 	width: 50%;
+	 }
+
+	.testimonial .item img {
+		display: none;
+		visibility: hidden;
+	}
+
+	.testimonial .review-main .review-con {
+		padding: 0;
+	}
+
+	.footer .social-icon ul {
+		text-align: left;
+		padding-top: 10px;
+	}
+
+	.footer .social-icon ul li {
+		padding: 0 10px 0 0;
+	}
+}
+
+/*************************************************************
+ Responsive Style Area (max-width: 700px)
+ *************************************************************/
+
+@media (max-width: 700px) {
+	.contact .contact_form .half {
+		width: 100%;
+	}
+}
+
+/*************************************************************
+ Responsive Style Area (max-width: 600px)
+ *************************************************************/
+
+@media (max-width: 600px) {
+
+	h1 {
+		font-size: 50px;
+	}
+
+	h2 {
+		font-size: 40px;
+	}
+
+	h3 {
+		font-size: 28px;
+	}
+
+	.about img {
+		margin-bottom: 30px;
+		max-width: 320px;
+	}
+
+}
+
+/*************************************************************
+ Responsive Style Area (max-width: 500px)
+ *************************************************************/
+
+@media (max-width: 500px) {
+
+	h1 {
+		font-size: 45px;
+	}
+
+	h2 {
+		font-size: 35px;
+	}
+
+	h3 {
+		font-size: 25px;
+	}
+
+	.about img {
+		margin-bottom: 30px;
+		max-width: 280px;
+	}
+
+}
+
+/*************************************************************
+ Responsive Style Area (max-width: 420px)
+ *************************************************************/
+
+@media (max-width: 420px) {
+
+	h1 {
+		font-size: 36px;
+	}
+
+	h2 {
+		font-size: 30px;
+	}
+
+	h3 {
+		font-size: 24px;
+	}
+
+	.portfolio .portfolio_content ul li {
+	 	width: 100%;
+	 }
+
+}
