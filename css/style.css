@@ -107,6 +107,19 @@ ul {
 	text-align: left;
 }
 
+.menu_bar ul li.logo {
+	border-bottom: 0;
+	margin-bottom: 20px;
+}
+
+.menu_bar ul li.logo a,
+.menu_bar ul li.logo a:hover {
+	font-size: 50px;
+	padding: 0;
+	line-height: 50px;
+	color: #EFF7D3;
+}
+
 .menu_bar ul li:last-child {
 	border-bottom: 0;
 }
