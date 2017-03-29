@@ -48,7 +48,7 @@ ul {
 	/*min-height: 100vh;*/
 	position: relative;
 	color: #535A3B;
-	padding: 7% 3%;
+	padding: 7% 1%;
 }
 
 .container {
@@ -463,6 +463,7 @@ uncomment this part if you haven't added this code anywhere else
 
 	.header {
 		min-height: auto;
+		margin-top: 50px;
 	}
 
 	.header_content {
