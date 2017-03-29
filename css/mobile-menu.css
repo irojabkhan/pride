@@ -1,3 +1,20 @@
+.mobile-inner-logo {
+  float: left;
+}
+
+.mobile-inner-logo a {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    line-height: 40px;
+    display: block;
+    margin: 5px 15px;
+    color: #fff;
+    cursor: pointer !important;
+}
+
+
 .mobile-inner-nav a{
 	-webkit-animation-duration: 0.5s;
 	animation-duration: 0.5s;
