@@ -45,23 +45,14 @@ ul {
 .testimonial, 
 .contact {
 	height: auto;
-	/*min-height: 100vh;*/
 	position: relative;
 	color: #535A3B;
-	padding: 7% 1%;
+	padding: 7% 3%;
 }
 
 .container {
-	max-width: 1000px;
 	width: auto;
 }
-
-/*.vertical_center {
-	position: absolute;
-	top: 50%;
-	left: 39px;
-	transform: translateY(-50%);
-}*/
 
 .title {
     margin-bottom: 50px;
@@ -326,10 +317,11 @@ uncomment this part if you haven't added this code anywhere else
 
 .testimonial {
 	background: url(../img/testimonial-bg.jpg) no-repeat right;
+	background-size: cover;
 }
-
+ 
 .owl_carousel {
-	max-width: 1000px;
+	/*max-width: 1000px;*/
 	overflow: hidden;
 }
 
