@@ -89,6 +89,20 @@ ul {
 	z-index: 1;
 }
 
+.menu_bar ul p {	
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+ 
+.menu_bar ul p a.logo,
+.menu_bar ul p a.logo:hover {
+	font-size: 50px;
+	padding: 0;
+	line-height: 50px;
+	color: #EFF7D3;	
+	text-decoration: none;
+}
+
 .menu_bar ul {
 	padding: 0;
 	margin: 0;
@@ -105,19 +119,6 @@ ul {
 .menu_bar ul li {
 	border-bottom: 1px dashed #EFF7D3;
 	text-align: left;
-}
-
-.menu_bar ul li.logo {
-	border-bottom: 0;
-	margin-bottom: 20px;
-}
-
-.menu_bar ul li.logo a,
-.menu_bar ul li.logo a:hover {
-	font-size: 50px;
-	padding: 0;
-	line-height: 50px;
-	color: #EFF7D3;
 }
 
 .menu_bar ul li:last-child {
